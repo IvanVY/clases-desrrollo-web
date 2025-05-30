@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--etiqueta de apertura-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--etiqueta de cierre-->
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--carrusel-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/1.jpg" class="d-block w-100 img-fluid" style="height: 350px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/2.jpg" class="d-block w-100 img-fluid" style="height: 350px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.jpg" class="d-block w-100 img-fluid" style="height: 350px; object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <h1 class="text-center my-2 text-danger fst-italic">Tecnologias utilizadas en desarrollo</h1>
+    <!--container-->
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/python.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-python">Python</h5>
+                        <p class="card-text">Python el lenguaje de programacion mas utilizado para el analisis de datos.
+                        </p>
+                        <a href="https://docs.python.org/3/" class="btn btn-primary">Go Documentacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/csharp.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-c#">C#</h5>
+                        <p class="card-text">C# se lo reconoce por ser utilizado en aplicativos de escritorio.</p>
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/"
+                            class="btn btn-primary">Go Documentacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/java.png" class="card-img-top" width="100" height="150" alt="150">
+                    <div class="card-body">
+                        <h5 class="card-c#">Java</h5>
+                        <p class="card-text">Java es uno de los lenguajes de programacion mas poderoso a pesar de que
+                            muchos programadores los estan menospreciando.</p>
+                        <a href="https://docs.oracle.com/en/java/" class="btn btn-primary">Go Documentacion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form" style="width: 18rem;">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" id="nombre"
+                            placeholder="Nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" class="form-control" id="apellido"
+                            placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mt-2 text-center">
+                        <button class="btn btn-danger">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="container" style="width: 50%;">
+                    <table class="table table-striped table-hover mt-5 w-50 mx-auto">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan</td>
+                                <td>Perez</td>
+                                <td>juan@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Maria</td>
+                                <td>Lopez</td>
+                                <td>maria@.com</td>
+                            </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

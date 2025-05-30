@@ -96,6 +96,103 @@
 
         </tbody>
     </table>
+
+    <h2>Registro de datos</h2>
+    <form action="validarDatos.php">
+        <div>
+            <label for="">Nombre</label>
+            <input type="text">
+        </div>
+        <!-- ctrl k + ctrl c para comentarios -->
+        <div>
+            <label for="">Edad</label>
+            <input type="number" disabled>
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" placeholder="usuario@usuario.com" required>
+        </div>
+        <div>
+            <label for="">Contraseña</label>
+            <input type="password" placeholder="123456" required>
+            <!--  -->
+        </div>
+
+
+        <textarea name="" id="" placeholder="ingrese un comentario" rows="10" cols="40"></textarea>
+        <h2>Seleccione lenguajes de programacion que conozca</h2>
+        <div>
+            <label for="">Java</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <label for="">C++</label>
+            <input type="checkbox">
+        </div>
+        <div>
+            <label for="">Kotlin</label>
+            <input type="checkbox">
+        </div>
+
+        <p>Seleccione su nivel de ingles</p>
+        <div>
+            <label for="">A1</label>
+            <input type="radio" name="ingles">
+        </div>
+        <div>
+            <label for="">A2</label>
+            <input type="radio" name="ingles">
+        </div>
+        <div>
+            <label for="">B1</label>
+            <input type="radio" name="ingles">
+        </div>
+        <div>
+            <label for="">B2</label>
+            <input type="radio" name="ingles">
+        </div>
+
+        <p>Seleccione una provincia</p>
+        <select name="" id="">
+            <option value="1">Buenos Aires</option>
+            <option value="2">CABA</option>
+            <option value="3">Cordoba</option>
+            <option value="4">Santa Fe</option>
+            <option selected value="5">Mendoza</option>
+            <option value="6">Tucuman</option>
+            <option value="7">Salta</option>
+            <option value="8">Jujuy</option>
+            <option value="9">Misiones</option>
+        </select>
+
+        <p>Seleccione el semestre actual</p>
+        <select name="semestreActual" id="semestreActual">
+            <option value="1">Primer semestre</option>
+            <option value="2">Segundo semestre</option>
+            <option value="3">Tercer semestre</option>
+            <option value="4">Cuarto semestre</option>
+            <option value="5">Quinto semestre</option>
+            <option value="6">Sexto semestre</option>
+            <option value="7">Septimo semestre</option>
+            <option value="8">Octavo semestre</option>
+        </select>
+
+        <div>
+            <input type="file">
+        </div>
+        <input type="date">
+        <input type="time">
+        <input type="color">
+
+        <div>
+            <input type="submit" value="Enviar">
+            <button>Registrar</button>
+        </div>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
 </body>
 
 </html>
