@@ -11,6 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $edad = $_POST['edad'] ?? '';
     $ciudad = $_POST['ciudad'] ?? '';
 
+    
+
     if (isset($_POST['insert'])) {
         if (!empty($nombre) && !empty($apellido) && !empty($edad) && !empty($ciudad)) {
             $sql = "INSERT INTO form (nombre, apellido, edad, ciudad)

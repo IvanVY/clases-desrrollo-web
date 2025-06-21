@@ -41,7 +41,7 @@
     }
 
     nav ul li {
-      margin-left: 20px;
+      margin-left: 2px;
     }
 
     nav ul li a {
@@ -67,7 +67,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 20px;
+      padding: 10px;
     }
 
     .galeria img {
@@ -80,23 +80,25 @@
     .galeria img:hover {
       transform: scale(1.05);
     }
+  
   </style>
+  <link rel="stylesheet" href="../web_ia/css/styles.css">
 </head>
 <body>
 
-  <!-- Barra de navegación igual a la del inicio -->
-  <div class="caja">
-    <h1>Explora<span>Mundo</span></h1>
-    <nav>
-      <ul>
-        <li><a href="/jueves_5_06/index_2.html">Inicio</a></li>
-        <li><a href="capturas.html">Capturas</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Testimonios</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
+        <div class="container">
+            <a href="#" class="logo">IDJ<span>Pro</span></a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-link">navBar</a></li>
+                    <li><a href="../flex_box/index.html" class="nav-link">Flex Box</a></li>
+                    <li><a href="../web_ia/index.html" class="nav-link">Web con IA</a></li>
+                    <li><a href="../sapitos/index.html" class="nav-link">Sapitos</a></li>
+                    <li><a href="https://programacion-web-itecsu.free.nf/?i=1" class="nav-link">Crud</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            </nav>
+        </div>
 
   <!-- Contenido principal de la página de capturas -->
   <h2>Galería de Capturas</h2>

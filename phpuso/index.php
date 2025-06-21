@@ -27,7 +27,7 @@ if (isset($_GET['edit'])) {
         <div class="row">
             <!-- Formulario -->
             <div class="col-md-3">
-                <form method="POST" action="insertar.php">
+                <form method="POST" action="insertar.php" enctype="multipart/form-data">
 
 
 
@@ -99,6 +99,8 @@ if (isset($_GET['edit'])) {
             </div>
         </div>
     </div>
+
+    <p ></p>
 </body>
 
 </html>
